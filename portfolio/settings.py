@@ -10,12 +10,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 #SECRET_KEY = 'n3$*ph11c*8b$6dira-=3u10c&dxvzrh7mcrq_yn15i67hydza'
-SECRET_KEY = os.environ.get['DJANGO_SECRET_KEY',
-                            'n3$*ph11c*8b$6dira-=3u10c&dxvzrh7mcrq_yn15i67hydza']
+SECRET_KEY = os.environ.get(
+    'DJANGO_SECRET_KEY', 'n3$*ph11c*8b$6dira-=3u10c&dxvzrh7mcrq_yn15i67hydza')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['limitless-thicket-73312.herokuapp.com',
+ALLOWED_HOSTS = ['https://secure-earth-66335.herokuapp.com/',
                  'localhost', '127.0.0.1']
 
 
