@@ -20,7 +20,7 @@ if not IS_HEROKU:
     DEBUG = True
 
 if IS_HEROKU:
-    ALLOWED_HOSTS = ["*"]
+    ALLOWED_HOSTS = ["secure-earth-66335.herokuapp.com"]
 else:
     ALLOWED_HOSTS = []
 
